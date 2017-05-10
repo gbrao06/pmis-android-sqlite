@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/newTeamMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Add Member"
+ 		android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"
+		android:background="@android:color/transparent"/>
+    
+    <!-- Teams-->
+    <Button
+        android:id="@+id/projectsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Projects" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+    <!-- Editext for Search -->  
+    <Button
+        android:id="@+id/teamsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Messages" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+  </LinearLayout>
+  <!-- Editext for Search -->
+    
+   <EditText
+        android:id="@+id/inputBlogSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_pmis_search_projects"
+        android:inputType="textVisiblePassword" 
+		android:background="@drawable/rounded_edit_text"/>
+    
+    <!-- List View -->
+    <ListView
+        android:id="@+id/blog_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+  
+</LinearLayout>

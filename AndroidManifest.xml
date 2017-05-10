@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pmis.pmislite"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+<uses-sdk android:minSdkVersion="14" 
+android:targetSdkVersion="17" />
+<uses-permission android:required="true" android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:required="true" android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission  android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:required="true" android:name="android.permission.INTERNET" />
+<uses-permission  android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+<uses-feature
+    android:name="android.hardware.wifi.direct"
+    android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pmis.pmislite.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" 
+             android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pmis.pmislite.projects.ProjectListActivity"
+            android:label="@string/project_item_list"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pmis.pmislite.teams.TeamListActivity"
+            android:label="Teams"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pmis.pmislite.teams.NewTeamActivity"
+            android:label="New Team"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.pmis.pmislite.projects.ProjectDetailActivity"
+            android:label="@string/selected_project"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.pmis.pmislite.selected.PmisSelectedProjectAccordianActivity"
+            android:label="@string/app_accordian_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pmis.pmislite.selected.PmisEditDeleteTaskActivity"
+            android:label="@string/selected_project" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.pmis.pmislite.selected.PmisNewWbsTaskActivity"
+            android:label="@string/selected_project" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.pmis.pmislite.tasks.TaskListActivity"
+            android:label="@string/selected_project" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    	
+		<activity
+            android:name="com.pmis.pmislite.projects.NewProjectActivity"
+            android:label="@string/selected_project" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.pmis.pmislite.messages.WiFiDirectActivity"
+            android:label="WiFiDirect" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.pmis.pmislite.messages.MessagesActivity"
+            android:label="Messages" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+				<activity
+            android:name="com.pmis.pmislite.login.LoginActivity"
+            android:label="Login Page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.pmis.pmislite.login.NewRegistrationActivity"
+            android:label="Registration Page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>	        
+    </application>
+
+</manifest>

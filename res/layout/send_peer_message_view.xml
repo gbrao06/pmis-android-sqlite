@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SendPeerMessageActivity" >
+     
+    <!-- Select Receiver-->
+ <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    
+     <TextView android:id="@+id/text_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Receiver:"/>    
+    
+     <Spinner
+        android:id="@+id/message_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+     
+ </LinearLayout>
+ <!-- Parent task Selection -->
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    
+     <TextView android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Message:"/>    
+    
+        <EditText android:id="@+id/peer_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:hint="Message here.."/>
+        
+ </LinearLayout>
+ <!-- New Task Priority -->
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+     <TextView android:id="@+id/text_doc_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Doc Id:"/>    
+    
+     <Spinner
+        android:id="@+id/wbs_priority_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>   
+ <!-- Task Assigned To -->
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+     
+     <TextView android:id="@+id/text_wbs_assigned_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="AssignedTo:"/>    
+ 
+         <Spinner
+        android:id="@+id/wbs_assigned_to_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>
+ <!-- Task Wbs ID -->
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+  <TextView android:id="@+id/text_wbs_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="WbsID:"/>    
+ 
+    <EditText android:id="@+id/wbs_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:hint="e.g., T1.0"/>
+    </LinearLayout>
+    
+ <!-- Task Start Estimate -->
+ 
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+  <TextView android:id="@+id/text_start_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Start:"/>    
+    
+    <EditText android:id="@+id/wbs_start_estimate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:inputType="date"
+		android:hint="mm/dd/yyyy"/>    
+ </LinearLayout>
+    
+ <!-- Task End Estimate -->
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+  <TextView android:id="@+id/text_end_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="End:"/>    
+    
+    <EditText android:id="@+id/wbs_end_estimate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:inputType="date"
+		android:hint="mm/dd/yyyy"/>    
+ </LinearLayout>
+    <!-- Efforts Per Day -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView android:id="@+id/text_wbs_efforts_per_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Efforts/Day"/>    
+    
+    <EditText android:id="@+id/wbs_efforts_per_day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="8.0"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:inputType="numberDecimal"/>
+</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"> 
+    
+    <Button
+        android:id="@+id/saveWbsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Save Wbs" />
+
+    <Button
+        android:id="@+id/cancelWbsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cancel" />
+     
+    </LinearLayout>
+    
+</LinearLayout>

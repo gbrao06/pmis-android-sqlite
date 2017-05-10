@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PmisNewWbsTaskActivity" >
+     
+    <!-- New Task Description-->
+ <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    
+     <TextView android:id="@+id/text_wbs_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Task:"/>    
+    
+    <EditText android:id="@+id/wbs_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:hint="Task Description"/>
+    
+ </LinearLayout>
+ <!-- Parent task Selection -->
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    
+     <TextView android:id="@+id/wbs_parent_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Parent Task:"/>    
+    
+     <Spinner
+        android:id="@+id/parent_task_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>
+ <!-- New Task Priority -->
+    
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    
+    <EditText android:id="@+id/wbs_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:hint="WBSID e.g., T1.0"/>
+    
+     <TextView android:id="@+id/text_wbs_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Priority:"/>    
+    
+     <Spinner
+        android:id="@+id/wbs_priority_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     
+ </LinearLayout>   
+ <!-- Task Assigned To -->
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+     
+     <TextView android:id="@+id/text_wbs_assigned_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="AssignedTo:"/>    
+ 
+         <Spinner
+        android:id="@+id/wbs_assigned_to_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>
+ <!-- Task Wbs ID -->
+ 
+
+    
+ <!-- Task Start Estimate -->
+ 
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+  <TextView android:id="@+id/text_start_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Start:"/>    
+    
+    <EditText android:id="@+id/wbs_start_estimate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:inputType="date"
+		android:hint="mm/dd/yyyy"/>    
+ </LinearLayout>
+    
+ <!-- Task End Estimate -->
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+  <TextView android:id="@+id/text_end_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="End:"/>    
+    
+    <EditText android:id="@+id/wbs_end_estimate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:inputType="date"
+		android:hint="mm/dd/yyyy"/>    
+ </LinearLayout>
+    <!-- Efforts Per Day -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView android:id="@+id/text_wbs_efforts_per_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Efforts/Day"/>    
+    
+    <EditText android:id="@+id/wbs_efforts_per_day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="8.0"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"    
+ 		android:inputType="numberDecimal"/>
+</LinearLayout>
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+     <TextView android:id="@+id/text_new_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:hint="Status:"/>    
+    
+     <Spinner
+        android:id="@+id/status_new_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+ </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"> 
+    
+    <Button
+        android:id="@+id/saveWbsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Save Wbs" />
+
+    <Button
+        android:id="@+id/cancelWbsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cancel" />
+     
+    </LinearLayout>
+    
+</LinearLayout>

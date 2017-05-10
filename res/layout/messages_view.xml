@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+  
+          <Button
+        android:id="@+id/blogsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Blogs" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+    <Button
+        android:id="@+id/teamsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Teams"
+ 		android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"
+		android:background="@android:color/transparent"/>
+    
+    <!-- Teams-->
+    <Button
+        android:id="@+id/projectsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Projects" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+    <!-- Blogs-->
+    
+  
+  </LinearLayout>
+  
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/messages_inbox_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Inbox" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+    <Button
+        android:id="@+id/sent_messages_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sent Messages" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+    <Button
+        android:id="@+id/send_peer_message_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Send Peer Message" 
+        android:layout_marginRight="2dp"
+		android:layout_marginLeft="2dp"/>
+    
+  </LinearLayout>
+    
+</LinearLayout>

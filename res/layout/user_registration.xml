@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    
+    <!-- Email Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Company:"
+        android:textColor="#750A0A"
+        android:layout_marginBottom="5dip"/>
+     
+    <!-- Company Id text -->
+    <EditText android:id="@+id/company_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g.,1200"
+        android:layout_marginBottom="10dip"
+        android:inputType="number"/>
+     
+    <!-- Company name text -->
+    <EditText android:id="@+id/company_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:layout_marginBottom="10dip"/>
+     </LinearLayout>
+    
+    
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    
+    <!-- Mobile_no Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="mobile:"
+    	android:textColor="#750A0A"
+        android:layout_marginBottom="5dip"/>
+     
+    <!-- Mobile No Text -->
+       <EditText android:id="@+id/mobile_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="9640599692"
+        android:layout_marginBottom="10dip"
+        android:inputType="number"/>
+ </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    
+    <!-- Email Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#750A0A"
+        android:layout_marginBottom="5dip"/>
+     
+    <!-- Email input text -->
+    <EditText android:id="@+id/user_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"/>
+    </LinearLayout> 
+    
+    
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    
+    <!-- Password Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginBottom="5dip"/>
+     
+    <!-- Password input text -->
+    <EditText android:id="@+id/pass_word"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:password="true"/>
+    </LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    
+        
+    <!-- Fisrname,lastname Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="#750A0A"
+        android:layout_marginBottom="5dip"/>
+     
+    <!-- first name text -->
+    <EditText android:id="@+id/first_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:hint="First Name:"/>
+     
+    <!-- Last name -->
+    <EditText android:id="@+id/last_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:hint="Last Name:"/>
+    </LinearLayout>
+  
+    <!-- Login button -->
+    <Button android:id="@+id/register_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"/>
+</LinearLayout>

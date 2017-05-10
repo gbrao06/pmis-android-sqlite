@@ -1,0 +1,316 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical"
+    tools:context=".FullscreenActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            tools:ignore="UselessParent" >
+
+<!--First Row-->
+
+        <LinearLayout
+            android:id="@+id/row1"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            
+            tools:ignore="UselessParent" >
+
+            
+            <LinearLayout
+            android:id="@+id/projectButtonLayout"
+            style="?buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            tools:ignore="UselessParent" >       
+              
+       	 <ImageButton
+            android:id="@+id/imageProjectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_pmis_project" />
+
+        <TextView
+    android:id="@+id/textProjectButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:paddingTop="20dp"
+    android:text="@string/text_pmis_projects"
+    android:textColor="#33b5e5"
+    android:textSize="20sp"
+    android:layout_weight="1"
+        
+    android:textStyle="bold" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/taskButtonLayout"
+                style="?buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                tools:ignore="UselessParent" >
+
+                <ImageButton
+                    android:id="@+id/imageTaskButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_pmis_tasks" />
+
+                <TextView
+                    android:id="@+id/textTaskButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:paddingTop="20dp"
+                    android:text="@string/text_pmis_tasks"
+                    android:textColor="#33b5e5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+             <LinearLayout
+                android:id="@+id/teamButtonLayout"
+                style="?buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                tools:ignore="UselessParent" >
+
+                <ImageButton
+                    android:id="@+id/imageTeamButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_pmis_team" />
+
+                <TextView
+                    android:id="@+id/textTeamButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:paddingTop="20dp"
+                    android:text="@string/text_pmis_my_team"
+                    android:textColor="#33b5e5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+  </LinearLayout>
+         
+        <!--Second Row-->
+        
+             <LinearLayout
+            android:id="@+id/row2"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"    
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+            android:id="@+id/mailBoxButtonLayout"
+            style="?buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            tools:ignore="UselessParent" >       
+              
+        <ImageButton
+            android:id="@+id/imageMailBoxButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_pmis_inbox" />
+
+        <TextView
+    android:id="@+id/textMailBoxButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:paddingTop="20dp"
+    android:text="@string/text_pmis_my_mail_box"
+    android:textColor="#33b5e5"
+    android:textSize="20sp"
+    android:layout_weight="1"    
+    android:textStyle="bold" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notesButtonLayout"
+                style="?buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                tools:ignore="UselessParent" >
+
+                <ImageButton
+                    android:id="@+id/imageNotesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_pmis_notes" />
+
+                <TextView
+                    android:id="@+id/textNotesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:paddingTop="20dp"
+                    android:text="@string/text_pmis_my_notes"
+                    android:textColor="#33b5e5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            
+            
+             <LinearLayout
+                android:id="@+id/setingsButtonLayout"
+                style="?buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                tools:ignore="UselessParent" >
+
+                <ImageButton
+                    android:id="@+id/imageSettingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_pmis_settings" />
+
+                <TextView
+                    android:id="@+id/textSettingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:paddingTop="20dp"
+                    android:text="@string/text_pmis_settings"
+                    android:textColor="#33b5e5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+  </LinearLayout>
+        
+        
+       <LinearLayout
+                android:id="@+id/setingsButtonLayout"
+                style="?buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                tools:ignore="UselessParent" >
+        
+             <LinearLayout
+                android:id="@+id/setingsButtonLayout"
+                style="?buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                tools:ignore="UselessParent" >
+
+            
+            <ImageButton
+                    android:id="@+id/imageSyncOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_pmis_settings" 
+                    android:text="Sync Online"/>
+
+                <TextView
+                    android:id="@+id/textSettingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:paddingTop="20dp"
+                    android:text="Sync Online"
+                    android:textColor="#33b5e5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                            
+            </LinearLayout>
+        
+                                         <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:paddingTop="20dp"
+            android:text="@string/text_pmis"
+            android:textColor="#33b5e5"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+             </LinearLayout>
+        </LinearLayout>
+        
+</RelativeLayout>
